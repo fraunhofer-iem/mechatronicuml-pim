@@ -1,15 +1,15 @@
 
-package org.muml.pim.actionlanguage.properties.actionlanguage.editor;
+package org.muml.pim.properties.pim.editor;
 
 /**
  * @generated
  */
-public abstract class ElementAccessorExpressionEditor extends org.muml.ape.runtime.editors.ClassPropertyEditor {
+public class TestEditor extends org.muml.ape.runtime.editors.ClassPropertyEditor {
 
 	/**
 	 * @generated
 	 */
-	public ElementAccessorExpressionEditor(String tab, org.eclipse.emf.common.notify.AdapterFactory adapterFactory,
+	public TestEditor(String tab, org.eclipse.emf.common.notify.AdapterFactory adapterFactory,
 			org.eclipse.emf.ecore.EClass eClass) {
 		super(tab, adapterFactory, eClass);
 	}
@@ -44,6 +44,33 @@ public abstract class ElementAccessorExpressionEditor extends org.muml.ape.runti
 		} else if ("property.tab.extensions".equals(tab)) { // Tab Extensions
 
 		} else {
+		}
+	}
+
+	//
+	// instantiation
+	//
+
+	/**
+	 * @generated
+	 */
+	public TestEditor(String tab) {
+		this(tab, org.muml.pim.properties.util.PropertiesUtil.INSTANCE.getAdapterFactory(),
+				org.muml.pim.PimPackage.eINSTANCE.getTest());
+	}
+
+	/**
+	 * @generated
+	 */
+	public static class Factory implements org.muml.ape.runtime.factory.IPropertyEditorFactory {
+		@Override
+		public org.muml.ape.runtime.editors.IPropertyEditor createPropertyEditor(String tab) {
+			return new TestEditor(tab);
+		}
+
+		@Override
+		public boolean hasTab(java.lang.String tab) {
+			return java.util.Arrays.asList(new java.lang.String[]{}).contains(tab);
 		}
 	}
 
